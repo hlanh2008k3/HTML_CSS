@@ -1,0 +1,96 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --primary-color: #0f1b4c;
+  /* Đặt tên biến màu. */
+}
+
+html {
+  font-size: 62.5%;
+  /*  62,5% kích thước phông chữ mặc định trong trình duyệt 
+  (16px) bằng 10px nên việc chuyển đổi giá trị pixel 
+  thành rem  giá trị trở nên dễ dàng.
+   Ví dụ: 1.6rem sẽ có kết xuất 16px (16/10=1.6).*/
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: "Poppins";
+}
+
+/*Common*/
+a {
+  text-decoration: none; /*Bỏ gạch chân*/
+}
+
+.content {
+  width: 1110px;
+  max-width: calc(100% - 48px);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.btn {
+  display: inline-block;
+  padding: 18px 16px;
+  min-width: 98px;
+  border-radius: 8px;
+  background: var(--primary-color);
+  color: #fff;
+  text-align: center;
+  font-size: 1.4rem;
+  font-weight: 500;
+}
+
+.btn:hover {
+  opacity: 0.9; /* Độ Mờ*/
+}
+
+/* Header */
+.header {
+  background-color: #e6f0ff;
+  height: 100vh; /* h100vh viet tat height: 100vh;   */
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  padding-top: 3.8rem;
+}
+
+/* ul */
+.navbar ul {
+  display: flex;
+  margin-left: 50px;
+}
+
+.navbar ul a {
+  font-size: 1.4 rem;
+  font-weight: 500;
+  color: #4f5361;
+  padding: 8rem 1.4rem;
+}
+
+.navbar ul a:hover {
+  text-decoration: underline;
+}
+
+/* action */
+.navbar .action {
+  margin-left: auto;
+}
+
+.navbar .action-link {
+  color: var(--primary-color);
+  font-size: 1.4rem;
+  font-weight: 500;
+}
+
+.navbar .action-btn {
+  padding: 13px 16px;
+  margin-left: 1.8rem;
+}
